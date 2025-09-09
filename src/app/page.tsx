@@ -77,10 +77,12 @@ export default function Home() {
           logoAlt="DogMemecoin Logo"
           logoText="DogMemecoin"
           className="footer"
-          items={[
-            { label: 'Privacy Policy', onClick: () => console.log('Privacy Policy clicked') },
-            { label: 'Terms of Use', onClick: () => console.log('Terms of Use clicked') },
-            { label: 'Contact Us', onClick: () => console.log('Contact Us clicked') }
+          columns={[
+            { title: 'Links', items: [
+              { label: 'Privacy Policy', onClick: () => console.log('Privacy Policy clicked') },
+              { label: 'Terms of Use', onClick: () => console.log('Terms of Use clicked') },
+              { label: 'Contact Us', onClick: () => console.log('Contact Us clicked') }
+            ]}
           ]}
         />
       </div>
