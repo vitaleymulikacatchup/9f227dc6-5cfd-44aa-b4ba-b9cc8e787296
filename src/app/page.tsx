@@ -23,9 +23,8 @@ export default function Home() {
       <NavbarBase
         logoSrc="/images/logo.svg"
         logoAlt="DogMemecoin Logo"
-        navItems={navbarLinks}
-        buttonText="Join Now"
-        onButtonClick={() => console.log('Button clicked')}
+        leftButtonText="Join Now"
+        onLeftButtonClick={() => console.log('Button clicked')}
         className="navbar"
       />
       <div id="hero" data-section="hero" className="scroll-mt-24">
