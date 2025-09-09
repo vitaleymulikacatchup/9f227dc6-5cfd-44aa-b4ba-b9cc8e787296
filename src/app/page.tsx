@@ -8,15 +8,6 @@ import TextGridTokenomics from '@/components/sections/layouts/tokenomics/TextGri
 import YearRoadmapTimeline from '@/components/sections/layouts/roadmap/YearRoadmapTimeline';
 import FooterLogo from '@/components/footer/FooterLogo';
 
-const navbarLinks = [
-  { name: 'Home', id: 'hero' },
-  { name: 'About', id: 'about' },
-  { name: 'How to Buy', id: 'how-to-buy' },
-  { name: 'Tokenomics', id: 'tokenomics' },
-  { name: 'Roadmap', id: 'roadmap' },
-  { name: 'Footer', id: 'footer' },
-];
-
 export default function Home() {
   return (
     <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'slide' }}>
@@ -27,6 +18,7 @@ export default function Home() {
         onLeftButtonClick={() => console.log('Button clicked')}
         className="navbar"
       />
+
       <div id="hero" data-section="hero" className="scroll-mt-24">
         <SplitHero
           title="Welcome to DogMemecoin"
@@ -37,12 +29,14 @@ export default function Home() {
           onSecondaryButtonClick={() => console.log('Secondary button clicked')}
         />
       </div>
+
       <div id="about" data-section="about" className="scroll-mt-24">
         <CtaAbout
           title="About DogMemecoin"
           descriptions={["DogMemecoin is a vibrant community-driven token that is full of energy and excitement.", "Join us for a fun experience in meme culture!"]}
         />
       </div>
+
       <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">
         <HowToBuy3D
           title="How to Buy"
@@ -53,6 +47,7 @@ export default function Home() {
           ]}
         />
       </div>
+
       <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
         <TextGridTokenomics
           title="Tokenomics Overview"
@@ -64,6 +59,7 @@ export default function Home() {
           ]}
         />
       </div>
+
       <div id="roadmap" data-section="roadmap" className="scroll-mt-24">
         <YearRoadmapTimeline
           items={[
@@ -74,6 +70,7 @@ export default function Home() {
           className="roadmap"
         />
       </div>
+
       <div id="footer" data-section="footer" className="scroll-mt-24">
         <FooterLogo
           logoSrc="/images/logo.svg"
